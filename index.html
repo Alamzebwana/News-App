@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="https://i.pinimg.com/736x/26/91/f2/2691f2fa1a0f078f5f274edf7fea6763.jpg" width="50px" height="50px" alt="company logo" class="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex list">
+                    <li class="hover-link nav-item" id="ipl">Sports</li>
+                    <li class="hover-link nav-item" id="finance">Finance</li>
+                    <li class="hover-link nav-item" id="politics">Politics</li>
+                </ul>
+                <div class="options">
+                    <select id="dropdown-menu">
+                        <option value="" disabled selected>Options</option>
+                        <option value="sports">Sports</option>
+                        <option value="finance">Finance</option>
+                        <option value="politics">Politics</option>
+                    </select>
+                </div>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="Search">
+                <button id="search-button" class="search-button">Search</button>
+                <img class="light-dark-mode" src="moon.png" alt="" title="Light And Dark Mode">
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container container flex">
+            <!-- Cards will be injected here -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
